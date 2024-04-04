@@ -211,6 +211,10 @@
   button.btn.filed_btn.hbtn.res_login {
     display: block;
   }
+  .section.header {
+    position: fixed;
+    z-index: 1;
+  }
 }
 @media screen and (min-width: 809px) {
   .nav_menu ul li {
@@ -375,6 +379,10 @@
 }
 
 @media screen and (max-width: 474px) {
+  .section.header {
+    position: fixed;
+    z-index: 1;
+  }
   .image_card {
     height: 100%;
     width: 100%;
