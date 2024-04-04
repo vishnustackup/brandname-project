@@ -1,0 +1,421 @@
+@media screen and (max-width: 1217px) {
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .babtn {
+    font-size: 10px;
+    padding: 10px 17px 9px 10px;
+  }
+  .lined_btn {
+    font-size: 12px;
+    padding: 10px 17px 9px 10px;
+  }
+  .brand_title h1 {
+    font-size: 50px;
+  }
+  .brand_title h5 {
+    font-size: 14px;
+  }
+  .brand_title h4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  /* hamburger */
+  .text_btn {
+    display: none;
+  }
+  .nav_menu ul {
+    display: none;
+  }
+  .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu {
+    width: 15px;
+  }
+  .nav_menu a {
+    padding: 0px;
+  }
+  .nav_menu ul li {
+    position: relative;
+    padding: 10px;
+  }
+  label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .nav_menu {
+    visibility: hidden;
+    position: fixed;
+    display: block;
+    top: 60px;
+    left: -100px;
+    opacity: 0;
+    width: 300px;
+    height: calc(100% - 65px);
+    overflow: auto;
+    gap: 15px;
+    background-color: rgb(38 51 93);
+  }
+  .header_btns {
+    padding: 0px;
+  }
+
+  .check_menu label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .nav_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    color: black;
+    position: absolute;
+    text-align: left;
+    padding: 10px;
+  }
+
+  #check:checked ~ .nav_menu {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    top: 69px;
+    background: rgb(38 51 93);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease-in-out;
+  }
+  #menu_check:checked ~ .dropdown {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    left: 30px;
+    gap: 0px;
+    transition: 0.3s ease-in-out;
+  }
+  /* #check:checked ~ .nav_menu ul {
+    display: flex;
+    top: 65px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    gap: 26px;
+  } */
+  #check:checked ~ label i::before {
+    content: "\f00d";
+  }
+  #menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  #check_menu:checked ~ .dropdown_menu {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    left: 20px;
+    width: 155px;
+    gap: 0px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu_check:checked ~ a.menu_check i {
+    transform: rotate(180deg);
+  }
+  .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    text-align: left;
+  }
+  .dropdown_menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    display: block;
+    text-align: left;
+  }
+  .logo {
+    flex: 1;
+  }
+
+  .pricecard_list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .pricecard {
+    justify-items: center;
+  }
+  .section_flex.main {
+    gap: 5px;
+  }
+  .brand_image {
+    display: none;
+  }
+
+  .brand_title h1 {
+    font-size: 43px;
+    text-align: center;
+  }
+  .brand_title h5 {
+    font-size: 12px;
+    justify-content: center;
+  }
+  .brand_title h4 {
+    text-align: center;
+  }
+  .brand_btns {
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  .section.banner {
+    padding-bottom: 80px;
+  }
+  .feature_section {
+    flex-direction: row;
+    display: flex;
+    gap: 80px;
+  }
+  .footer_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .brand_title {
+    width: 100%;
+    padding-top: 90px;
+  }
+  .image_card {
+    height: 100%;
+    object-fit: cover;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  button.btn.filed_btn.hbtn.res_login {
+    display: block;
+  }
+}
+@media screen and (min-width: 809px) {
+  .nav_menu ul li {
+    position: relative;
+  }
+  .nav_menu ul li a:hover {
+    background-color: #ff6551;
+  }
+  /* 
+  .dropdown {
+    flex-direction: column;
+    background-color: #c113b2;
+    position: relative;
+    left: 0;
+    top: 34px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    gap: 5px;
+    cursor: pointer;
+  } */
+  .nav_menu ul li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgb(72, 72, 232);
+    border: 1px solid rebeccapurple;
+    border-radius: 5%;
+  }
+  .nav_menu ul li .dropdown li:hover ul.dropdown_menu {
+    visibility: visible;
+    opacity: 1;
+    left: 115px;
+    top: 12px;
+    background-color: rgb(96, 96, 236);
+    border: 1px solid rebeccapurple;
+    border-radius: 5%;
+  }
+  /* .dropdown_menu {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    text-align: left;
+  } */
+  .nav_menu ul li:hover i {
+    transform: rotate(360deg);
+  }
+  .nav_menu ul li .dropdown li:hover label i {
+    transform: rotate(270deg);
+  }
+  ul.dropdown {
+    flex-direction: column;
+    background-color: #2435a1;
+    position: absolute;
+    left: 0;
+    top: 33px;
+    opacity: 0;
+    visibility: hidden;
+    gap: 5px;
+    cursor: pointer;
+  }
+  ul.dropdown_menu {
+    flex-direction: column;
+    background-color: #2435a1;
+    position: absolute;
+    left: 0px;
+    top: 33px;
+    opacity: 0;
+    visibility: hidden;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .nav_menu ul li:hover ul.dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+  .section.dark {
+    padding: 50px 0px 50px 0px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .newcard h3 {
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+  }
+  .newcard {
+    right: -8px;
+    top: -16px;
+  }
+  .card_grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial_section_part {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer_grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .section_content {
+    padding-top: 55px;
+    padding-bottom: 12px;
+  }
+  .image_card {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .section_flex.dark {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .learn_picture {
+    width: 100%;
+  }
+  .section_title.featureone {
+    width: 100%;
+  }
+  .feature_section {
+    flex-direction: column;
+    display: flex;
+  }
+  .row {
+    grid-template-columns: repeat 1fr;
+    justify-items: center;
+  }
+  .featureone {
+    justify-content: center;
+    align-items: center;
+  }
+  .featureone p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .section_title.featureone h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .listitems {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  /* button.res_login {
+    display: block;
+  } */
+  .section.dark {
+    padding: 60px 0px 60px 0px;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .image_card {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .feature_section {
+    flex-direction: column;
+  }
+  /* .newcard {
+    right: -8px;
+    top: -16px;
+  } */
+  .brand_title h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .hbtn {
+    font-size: 7px;
+    padding: 12px;
+    font-weight: 700;
+  }
+  .testimonial_suggestion {
+    font-size: 12px;
+  }
+  .section_title p {
+    font-size: 12px;
+  }
+  .company_info_section {
+    gap: 10px;
+  }
+  .info_items {
+    gap: 9px;
+  }
+  .footer_grid {
+    gap: 29px;
+  }
+  .connect_platforms {
+    gap: 9px;
+  }
+  .copyright h6 {
+    font-size: 10px;
+  }
+}
